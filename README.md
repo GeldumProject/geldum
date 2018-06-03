@@ -1,7 +1,3 @@
-# This is outdated repo. Not supported. Check latest http://seeds.geldum.io/alpha/
-# DERO has written and migrated to its own blockchain in Golang.
-# Download latest pre-compiled binaries from http://seeds.geldum.io/alpha/ 
-
 # Geldum
 Copyright (c) 2017-2018, The Geldum Project
 
