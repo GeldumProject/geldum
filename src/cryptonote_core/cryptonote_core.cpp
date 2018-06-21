@@ -1274,13 +1274,13 @@ namespace cryptonote
     switch (state) {
       case HardFork::LikelyForked:
         MCLOG_RED(level, "global", "**********************************************************************");
-        MCLOG_RED(level, "global", "Last scheduled hard fork is too far in the past.");
-        MCLOG_RED(level, "global", "We are most likely forked from the network. Daemon update needed now.");
+        MCLOG_RED(level, "global", "Welcome to Geldum Daemon.");
+        MCLOG_RED(level, "global", "No updates needed ATM.");
         MCLOG_RED(level, "global", "**********************************************************************");
         break;
       case HardFork::UpdateNeeded:
         MCLOG_RED(level, "global", "**********************************************************************");
-        MCLOG_RED(level, "global", "Last scheduled hard fork time shows a daemon update is needed now.");
+        MCLOG_RED(level, "global", "Geldum Project www.geldum.org");
         MCLOG_RED(level, "global", "**********************************************************************");
         break;
       default:
