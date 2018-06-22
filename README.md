@@ -1,5 +1,5 @@
 # Geldum
-Copyright (c) 2017-2018, The Geldum Project
+Copyright (c) 2017-2018, The Geldum Project 
 
 Portions Copyright (c) 2014-2017, The Monero Project
 
@@ -9,6 +9,7 @@ Portions Copyright (c) 2012-2013, The Cryptonote developers
 
 - Web: [geldum.org](https://geldum.org)
 - GitHub: [https://github.com/geldumproject/geldum](https://github.com/geldumproject/geldum)
+- Geldum Project Github: [https://github.com/geldumproject](https://github.com/geldumproject)
 
 ## Build
 Download latest pre-compiled binaries from http://github.com/geldumproject/geldum/releases
