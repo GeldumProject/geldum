@@ -11,12 +11,7 @@ Portions Copyright (c) 2012-2013, The Cryptonote developers
 - GitHub: [https://github.com/geldumproject/geldum](https://github.com/geldumproject/geldum)
 
 ## Build
-Download latest pre-compiled binaries from http://github.com/geldumproject/geldum
-
-| Operating System      | Processor | Status |
-| --------------------- | -------- |--------|
-Binaries will be released shortly.
-
+Download latest pre-compiled binaries from http://github.com/geldumproject/geldum/releases
 
 
 ## Introduction
