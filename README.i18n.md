@@ -1,9 +1,13 @@
-Monero daemon internationalization
+Geldum daemon internationalization
 ==================================
 
-The Monero command line tools can be translated in various languages.
+Geldum is based on monero, so most translations come from Monero core, if you want to translate GELDUM, please link info@geldum.org
 
-In order to use the same translation workflow as the [Monero Core GUI](https://github.com/monero-project/monero-core), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
+This are the instructions for translation either in Geldum or Monero
+
+The Geldum command line tools can be translated in various languages.
+
+In order to use the same translation workflow as the [Geldum GUI](https://github.com/geldumproject/geldum-gui), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
 
 ### Tools for translators
 

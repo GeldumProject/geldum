@@ -21,19 +21,19 @@ Binaries will be released shortly.
 
 ## Introduction
 
-Geldum is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
+Geldum is the new cryptocurrency focused on small payments & transactions with the aim to create a solid privacy & security-focused cryptocurrency.
+Created as a fork of Cryptonote / Monero as some of the best technologies available right now on the blockchain sphere.
 
-**Privacy:** Geldum uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
+**Privacy & Data Protection:** Geldum use Cryptonight Algo, made to allow you to send and receives fund without your transaction beaing easily revealed on the blockchain.
 
-**Security:** Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 25 word mnemonic seed that is only displayed once, and can be written down to backup the wallet. Wallet files are encrypted with a passphrase to ensure they are useless if stolen.
+**Small Payments:** Geldum is ideal for micropayments with a total supply of 180 Million Geldum Coins.
 
-**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Geldum is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
+**Quick & Fast:** 60s Block Time
+
 
 ## About this Project
 
 This is the core implementation of Geldum. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Geldum that uses the protocol and network in a compatible manner.
-
-As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
 **Anyone is welcome to contribute to Geldum's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
 
@@ -41,21 +41,6 @@ As with many development projects, the repository on Github is considered to be 
 ## License
 
 See [LICENSE](LICENSE).
-
-# Contributing
-
-If you want to help out, see [CONTRIBUTING](CONTRIBUTING.md) for a set of guidelines.
-
-
-## Geldum software updates and consensus protocol changes (hard fork schedule)
-
-Geldum uses a fixed-schedule hard fork mechanism to implement new features. This means that users of Geldum (end users and service providers) need to run current versions and update their software on a regular schedule. Here is the current schedule, versions, and compatibility.
-Dates are provided in the format YYYY-MM-DD. 
-
-
-| Fork Date              | Consensus version | Minimum Geldum Version | Recommended Geldum Version | Details            |  
-| ----------------- | ----------------- | ---------------------- | -------------------------- | ------------------ |
-| 2018-06-04        | v1                | v0.1                   | v0.1                        | Base  |
 
 
 ## Compiling Geldum from Source
