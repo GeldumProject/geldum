@@ -7,7 +7,7 @@ Portions Copyright (c) 2012-2013, The Cryptonote developers
 
 ## Development Resources
 
-- Web: [geldum.org](https://geldum.org)
+- Web: [geldum.org](http://geldum.org)
 - GitHub: [https://github.com/geldumproject/geldum](https://github.com/geldumproject/geldum)
 - Geldum Project Github: [https://github.com/geldumproject](https://github.com/geldumproject)
 
