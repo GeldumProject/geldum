@@ -9,6 +9,7 @@ Portions Copyright (c) 2012-2013, The Cryptonote developers
 
 - Web: [geldum.org](http://geldum.org)
 - GitHub: [https://github.com/geldumproject/geldum](https://github.com/geldumproject/geldum)
+- GitHub Geldum GUI Wallet: - GitHub: [https://github.com/geldumproject/geldum-gui](https://github.com/geldumproject/geldum-gui)
 - Geldum Project Github: [https://github.com/geldumproject](https://github.com/geldumproject)
 
 ## Build
@@ -18,9 +19,9 @@ Download latest pre-compiled binaries from http://github.com/geldumproject/geldu
 ## Introduction
 
 Geldum is the new cryptocurrency focused on small payments & transactions with the aim to create a solid privacy & security-focused cryptocurrency.
-Created as a fork of Cryptonote / Monero as some of the best technologies available right now on the blockchain sphere.
+Created as a fork of Monero as some of the best technologies available right now on the blockchain sphere.
 
-**Privacy & Data Protection:** Geldum use Cryptonight Algo, made to allow you to send and receives fund without your transaction beaing easily revealed on the blockchain.
+**Privacy & Data Protection:** Geldum use Cryptonight Algo, made to allow you to send and receive funds without your transaction being easily revealed on the blockchain.
 
 **Small Payments:** Geldum is ideal for micropayments with a total supply of 180 Million Geldum Coins.
 
