@@ -531,8 +531,8 @@
         <translation>sweep_below &lt;montant_seuil&gt; [mixin] adresse [ID_paiement] - Envoyer toutes les sorties débloquées sous le seuil vers une adresse</translation>
     </message>
     <message>
-        <source>Available options: seed language - set wallet seed language; always-confirm-transfers &lt;1|0&gt; - whether to confirm unsplit txes; print-ring-members &lt;1|0&gt; - whether to print detailed information about ring members during confirmation; store-tx-info &lt;1|0&gt; - whether to store outgoing tx info (destination address, payment ID, tx secret key) for future reference; default-mixin &lt;n&gt; - set default mixin (default is 4); auto-refresh &lt;1|0&gt; - whether to automatically sync new blocks from the daemon; refresh-type &lt;full|optimize-coinbase|no-coinbase|default&gt; - set wallet refresh behaviour; priority [0|1|2|3|4] - default/unimportant/normal/elevated/priority fee; confirm-missing-payment-id &lt;1|0&gt;; ask-password &lt;1|0&gt;; unit &lt;monero|millinero|micronero|nanonero|piconero&gt; - set default monero (sub-)unit; min-outputs-count [n] - try to keep at least that many outputs of value at least min-outputs-value; min-outputs-value [n] - try to keep at least min-outputs-count outputs of at least that value - merge-destinations &lt;1|0&gt; - whether to merge multiple payments to the same destination address</source>
-        <translation type="obsolete">Options disponibles : seed language - définir la langue de la graine du portefeuille; always-confirm-transfers &lt;1|0&gt; - confirmer ou non les transactions non scindées; print-ring-members &lt;1|0&gt; - afficher ou non des informations détaillées sur les membres du cercle pendant la confirmation; store-tx-info &lt;1|0&gt; - sauvegarder ou non les informations des transactions sortantes (adresse de destination, ID de paiement, clé secrète de transaction) pour référence future; default-mixin &lt;n&gt; - définir le mixin par défaut (4 par défaut); auto-refresh &lt;1|0&gt; - synchroniser automatiquement ou non les nouveau blocs du démon; refresh-type &lt;full|optimize-coinbase|no-coinbase|default&gt; - définir le comportement du rafraîchissement du portefeuille; priority [0|1|2|3|4] - frais de transaction par défault/peu important/normal/élevé/prioritaire; confirm-missing-payment-id &lt;1|0&gt;; ask-password &lt;1|0&gt;; unit &lt;monero|millinero|micronero|nanonero|piconero&gt; - définir la (sous-)unité monero par défaut; min-outputs-count [n] - essayer de garder au moins ce nombre de sortie d&apos;une valeur d&apos;au moins min-outputs-value; min-outputs-value [n] - essayer de garder au moins min-outputs-count sorties d&apos;une valeur d&apos;au moins ce montant; merge-destinations &lt;1|0&gt; - fusionner ou non de multiples paiements à une même adresse de destination</translation>
+        <source>Available options: seed language - set wallet seed language; always-confirm-transfers &lt;1|0&gt; - whether to confirm unsplit txes; print-ring-members &lt;1|0&gt; - whether to print detailed information about ring members during confirmation; store-tx-info &lt;1|0&gt; - whether to store outgoing tx info (destination address, payment ID, tx secret key) for future reference; default-mixin &lt;n&gt; - set default mixin (default is 4); auto-refresh &lt;1|0&gt; - whether to automatically sync new blocks from the daemon; refresh-type &lt;full|optimize-coinbase|no-coinbase|default&gt; - set wallet refresh behaviour; priority [0|1|2|3|4] - default/unimportant/normal/elevated/priority fee; confirm-missing-payment-id &lt;1|0&gt;; ask-password &lt;1|0&gt;; unit &lt;geldum|milligeldum|microgeldum|nanogeldum|picogeldum&gt; - set default geldum (sub-)unit; min-outputs-count [n] - try to keep at least that many outputs of value at least min-outputs-value; min-outputs-value [n] - try to keep at least min-outputs-count outputs of at least that value - merge-destinations &lt;1|0&gt; - whether to merge multiple payments to the same destination address</source>
+        <translation type="obsolete">Options disponibles : seed language - définir la langue de la graine du portefeuille; always-confirm-transfers &lt;1|0&gt; - confirmer ou non les transactions non scindées; print-ring-members &lt;1|0&gt; - afficher ou non des informations détaillées sur les membres du cercle pendant la confirmation; store-tx-info &lt;1|0&gt; - sauvegarder ou non les informations des transactions sortantes (adresse de destination, ID de paiement, clé secrète de transaction) pour référence future; default-mixin &lt;n&gt; - définir le mixin par défaut (4 par défaut); auto-refresh &lt;1|0&gt; - synchroniser automatiquement ou non les nouveau blocs du démon; refresh-type &lt;full|optimize-coinbase|no-coinbase|default&gt; - définir le comportement du rafraîchissement du portefeuille; priority [0|1|2|3|4] - frais de transaction par défault/peu important/normal/élevé/prioritaire; confirm-missing-payment-id &lt;1|0&gt;; ask-password &lt;1|0&gt;; unit &lt;geldum|milligeldum|microgeldum|nanogeldum|picogeldum&gt; - définir la (sous-)unité geldum par défaut; min-outputs-count [n] - essayer de garder au moins ce nombre de sortie d&apos;une valeur d&apos;au moins min-outputs-value; min-outputs-value [n] - essayer de garder au moins min-outputs-count sorties d&apos;une valeur d&apos;au moins ce montant; merge-destinations &lt;1|0&gt; - fusionner ou non de multiples paiements à une même adresse de destination</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="743"/>
@@ -566,8 +566,8 @@
         <translation>0, 1, 2, 3 ou 4</translation>
     </message>
     <message>
-        <source>monero, millinero, micronero, nanop, piconero</source>
-        <translation type="obsolete">monero, millinero, micronero, nanonero, piconero</translation>
+        <source>geldum, milligeldum, microgeldum, nanogeldum, picogeldum</source>
+        <translation type="obsolete">geldum, milligeldum, microgeldum, nanogeldum, picogeldum</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="807"/>
@@ -987,8 +987,8 @@ Cette transaction sera déverrouillée au bloc %llu, dans approximativement %s j
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="711"/>
-        <source>donate [&lt;mixin_count&gt;] &lt;amount&gt; [payment_id] - Donate &lt;amount&gt; to the development team (donate.getmonero.org)</source>
-        <translation>donate [&lt;mixin&gt;] &lt;montant&gt; [ID_paiement] - Donner &lt;montant&gt; à l&apos;équipe de développement (donate.getmonero.org)</translation>
+        <source>donate [&lt;mixin_count&gt;] &lt;amount&gt; [payment_id] - Donate &lt;amount&gt; to the development team</source>
+        <translation>donate [&lt;mixin&gt;] &lt;montant&gt; [ID_paiement] - Donner &lt;montant&gt; à l&apos;équipe de développement</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="714"/>
@@ -1426,8 +1426,8 @@ Attention : Certaines clés d&apos;entrées étant dépensées sont issues de <
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="723"/>
-        <source>Available options: seed language - set wallet seed language; always-confirm-transfers &lt;1|0&gt; - whether to confirm unsplit txes; print-ring-members &lt;1|0&gt; - whether to print detailed information about ring members during confirmation; store-tx-info &lt;1|0&gt; - whether to store outgoing tx info (destination address, payment ID, tx secret key) for future reference; default-mixin &lt;n&gt; - set default mixin (default is 4); auto-refresh &lt;1|0&gt; - whether to automatically sync new blocks from the daemon; refresh-type &lt;full|optimize-coinbase|no-coinbase|default&gt; - set wallet refresh behaviour; priority [0|1|2|3|4] - default/unimportant/normal/elevated/priority fee; confirm-missing-payment-id &lt;1|0&gt;; ask-password &lt;1|0&gt;; unit &lt;monero|millinero|micronero|nanonero|piconero&gt; - set default monero (sub-)unit; min-outputs-count [n] - try to keep at least that many outputs of value at least min-outputs-value; min-outputs-value [n] - try to keep at least min-outputs-count outputs of at least that value; merge-destinations &lt;1|0&gt; - whether to merge multiple payments to the same destination address</source>
-        <translation>Options disponibles : seed language - définir la langue de la graine du portefeuille; always-confirm-transfers &lt;1|0&gt; - confirmer ou non les transactions non scindées; print-ring-members &lt;1|0&gt; - afficher ou non des informations détaillées sur les membres du cercle pendant la confirmation; store-tx-info &lt;1|0&gt; - sauvegarder ou non les informations des transactions sortantes (adresse de destination, ID de paiement, clé secrète de transaction) pour référence future; default-mixin &lt;n&gt; - définir le mixin par défaut (4 par défaut); auto-refresh &lt;1|0&gt; - synchroniser automatiquement ou non les nouveau blocs du démon; refresh-type &lt;full|optimize-coinbase|no-coinbase|default&gt; - définir le comportement du rafraîchissement du portefeuille; priority [0|1|2|3|4] - frais de transaction par défault/peu important/normal/élevé/prioritaire; confirm-missing-payment-id &lt;1|0&gt;; ask-password &lt;1|0&gt;; unit &lt;monero|millinero|micronero|nanonero|piconero&gt; - définir la (sous-)unité monero par défaut; min-outputs-count [n] - essayer de garder au moins ce nombre de sortie d&apos;une valeur d&apos;au moins min-outputs-value; min-outputs-value [n] - essayer de garder au moins min-outputs-count sorties d&apos;une valeur d&apos;au moins ce montant; merge-destinations &lt;1|0&gt; - fusionner ou non de multiples paiements à une même adresse de destination</translation>
+        <source>Available options: seed language - set wallet seed language; always-confirm-transfers &lt;1|0&gt; - whether to confirm unsplit txes; print-ring-members &lt;1|0&gt; - whether to print detailed information about ring members during confirmation; store-tx-info &lt;1|0&gt; - whether to store outgoing tx info (destination address, payment ID, tx secret key) for future reference; default-mixin &lt;n&gt; - set default mixin (default is 4); auto-refresh &lt;1|0&gt; - whether to automatically sync new blocks from the daemon; refresh-type &lt;full|optimize-coinbase|no-coinbase|default&gt; - set wallet refresh behaviour; priority [0|1|2|3|4] - default/unimportant/normal/elevated/priority fee; confirm-missing-payment-id &lt;1|0&gt;; ask-password &lt;1|0&gt;; unit &lt;geldum|milligeldum|microgeldum|nanogeldum|picogeldum&gt; - set default geldum (sub-)unit; min-outputs-count [n] - try to keep at least that many outputs of value at least min-outputs-value; min-outputs-value [n] - try to keep at least min-outputs-count outputs of at least that value; merge-destinations &lt;1|0&gt; - whether to merge multiple payments to the same destination address</source>
+        <translation>Options disponibles : seed language - définir la langue de la graine du portefeuille; always-confirm-transfers &lt;1|0&gt; - confirmer ou non les transactions non scindées; print-ring-members &lt;1|0&gt; - afficher ou non des informations détaillées sur les membres du cercle pendant la confirmation; store-tx-info &lt;1|0&gt; - sauvegarder ou non les informations des transactions sortantes (adresse de destination, ID de paiement, clé secrète de transaction) pour référence future; default-mixin &lt;n&gt; - définir le mixin par défaut (4 par défaut); auto-refresh &lt;1|0&gt; - synchroniser automatiquement ou non les nouveau blocs du démon; refresh-type &lt;full|optimize-coinbase|no-coinbase|default&gt; - définir le comportement du rafraîchissement du portefeuille; priority [0|1|2|3|4] - frais de transaction par défault/peu important/normal/élevé/prioritaire; confirm-missing-payment-id &lt;1|0&gt;; ask-password &lt;1|0&gt;; unit &lt;geldum|milligeldum|microgeldum|nanogeldum|picogeldum&gt; - définir la (sous-)unité geldum par défaut; min-outputs-count [n] - essayer de garder au moins ce nombre de sortie d&apos;une valeur d&apos;au moins min-outputs-value; min-outputs-value [n] - essayer de garder au moins min-outputs-count sorties d&apos;une valeur d&apos;au moins ce montant; merge-destinations &lt;1|0&gt; - fusionner ou non de multiples paiements à une même adresse de destination</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="724"/>
@@ -1516,8 +1516,8 @@ Attention : Certaines clés d&apos;entrées étant dépensées sont issues de <
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="806"/>
-        <source>monero, millinero, micronero, nanonero, piconero</source>
-        <translation>monero, millinero, micronero, nanonero, piconero</translation>
+        <source>geldum, milligeldum, microgeldum, nanogeldum, picogeldum</source>
+        <translation>geldum, milligeldum, microgeldum, nanogeldum, picogeldum</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="851"/>
@@ -1658,14 +1658,14 @@ Attention : Certaines clés d&apos;entrées étant dépensées sont issues de <
         <source>Your wallet has been generated!
 To start synchronizing with the daemon, use &quot;refresh&quot; command.
 Use &quot;help&quot; command to see the list of available commands.
-Always use &quot;exit&quot; command when closing monero-wallet-cli to save your
+Always use &quot;exit&quot; command when closing geldum-wallet-cli to save your
 current session&apos;s state. Otherwise, you might need to synchronize 
 your wallet again (your wallet keys are NOT at risk in any case).
 </source>
         <translation>Votre portefeuille a été généré !
 Pour commencer la synchronisation avec le démon, utilisez la commande &quot;refresh&quot;.
 Utilisez la commande &quot;help&quot; pour voir la liste des commandes disponibles.
-Utilisez toujours la commande &quot;exit&quot; pour fermer monero-wallet-cli afin de sauvegarder
+Utilisez toujours la commande &quot;exit&quot; pour fermer geldum-wallet-cli afin de sauvegarder
 l&apos;état actuel de votre session. Sinon vous pourriez avoir besoin de synchroniser
 votre portefeuille à nouveau (mais les clés de votre portefeuille ne risquent rien).
 </translation>
@@ -2475,8 +2475,8 @@ Sorties par * : </translation>
     </message>
     <message>
         <location filename="../src/common/dns_utils.cpp" line="439"/>
-        <source> Monero Address = </source>
-        <translation> Adresse Monero = </translation>
+        <source> Geldum Address = </source>
+        <translation> Adresse Geldum = </translation>
     </message>
     <message>
         <location filename="../src/common/dns_utils.cpp" line="441"/>

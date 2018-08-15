@@ -956,8 +956,8 @@ This transaction will unlock on block %llu, in approximately %s days (assuming 2
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="711"/>
-        <source>donate [&lt;mixin_count&gt;] &lt;amount&gt; [payment_id] - Donate &lt;amount&gt; to the development team (donate.getmonero.org)</source>
-        <translation>donate [&lt;mixin_count&gt;] &lt;amount&gt; [payment_id] - Dona &lt;amount&gt; al team di sviluppo (donate.getmonero.org)</translation>
+        <source>donate [&lt;mixin_count&gt;] &lt;amount&gt; [payment_id] - Donate &lt;amount&gt; to the development team </source>
+        <translation>donate [&lt;mixin_count&gt;] &lt;amount&gt; [payment_id] - Dona &lt;amount&gt; al team di sviluppo</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="714"/>
@@ -1387,7 +1387,7 @@ Warning: Some input keys being spent are from </source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="723"/>
-        <source>Available options: seed language - set wallet seed language; always-confirm-transfers &lt;1|0&gt; - whether to confirm unsplit txes; print-ring-members &lt;1|0&gt; - whether to print detailed information about ring members during confirmation; store-tx-info &lt;1|0&gt; - whether to store outgoing tx info (destination address, payment ID, tx secret key) for future reference; default-mixin &lt;n&gt; - set default mixin (default is 4); auto-refresh &lt;1|0&gt; - whether to automatically sync new blocks from the daemon; refresh-type &lt;full|optimize-coinbase|no-coinbase|default&gt; - set wallet refresh behaviour; priority [0|1|2|3|4] - default/unimportant/normal/elevated/priority fee; confirm-missing-payment-id &lt;1|0&gt;; ask-password &lt;1|0&gt;; unit &lt;monero|millinero|micronero|nanonero|piconero&gt; - set default monero (sub-)unit; min-outputs-count [n] - try to keep at least that many outputs of value at least min-outputs-value; min-outputs-value [n] - try to keep at least min-outputs-count outputs of at least that value; merge-destinations &lt;1|0&gt; - whether to merge multiple payments to the same destination address</source>
+        <source>Available options: seed language - set wallet seed language; always-confirm-transfers &lt;1|0&gt; - whether to confirm unsplit txes; print-ring-members &lt;1|0&gt; - whether to print detailed information about ring members during confirmation; store-tx-info &lt;1|0&gt; - whether to store outgoing tx info (destination address, payment ID, tx secret key) for future reference; default-mixin &lt;n&gt; - set default mixin (default is 4); auto-refresh &lt;1|0&gt; - whether to automatically sync new blocks from the daemon; refresh-type &lt;full|optimize-coinbase|no-coinbase|default&gt; - set wallet refresh behaviour; priority [0|1|2|3|4] - default/unimportant/normal/elevated/priority fee; confirm-missing-payment-id &lt;1|0&gt;; ask-password &lt;1|0&gt;; unit &lt;geldum|milligeldum|microgeldum|nanogeldum|picogeldum&gt; - set default geldum (sub-)unit; min-outputs-count [n] - try to keep at least that many outputs of value at least min-outputs-value; min-outputs-value [n] - try to keep at least min-outputs-count outputs of at least that value; merge-destinations &lt;1|0&gt; - whether to merge multiple payments to the same destination address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1467,7 +1467,7 @@ Warning: Some input keys being spent are from </source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="806"/>
-        <source>monero, millinero, micronero, nanonero, piconero</source>
+        <source>geldum, milligeldum, microgeldum, nanogeldum, picogeldum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1618,14 +1618,14 @@ Warning: Some input keys being spent are from </source>
         <source>Your wallet has been generated!
 To start synchronizing with the daemon, use &quot;refresh&quot; command.
 Use &quot;help&quot; command to see the list of available commands.
-Always use &quot;exit&quot; command when closing monero-wallet-cli to save your
+Always use &quot;exit&quot; command when closing geldum-wallet-cli to save your
 current session&apos;s state. Otherwise, you might need to synchronize 
 your wallet again (your wallet keys are NOT at risk in any case).
 </source>
         <translation>Il tuo portafoglio è stato generato!
 Per iniziare a sincronizzarlo con il daemon, usa il comando &quot;refresh&quot;.
 Usa il comando &quot;help&quot; per vedere la lista dei comandi disponibili.
-Usa sempre il comando &quot;exit&quot; quando chiudi monero-wallet-cli per salvare
+Usa sempre il comando &quot;exit&quot; quando chiudi geldum-wallet-cli per salvare
 lo stato della tua sessione &apos;s corrente. Altrimenti potresti dover sincronizzare 
 di nuovo il tuo portafoglio (le chiavi del tuo portafoglio NON sono a rischio in sessun caso).</translation>
     </message>
@@ -2433,8 +2433,8 @@ Outputs per *: </source>
     </message>
     <message>
         <location filename="../src/common/dns_utils.cpp" line="439"/>
-        <source> Monero Address = </source>
-        <translation>Indirizzo Monero = </translation>
+        <source> Geldum Address = </source>
+        <translation>Indirizzo Geldum = </translation>
     </message>
     <message>
         <location filename="../src/common/dns_utils.cpp" line="441"/>
