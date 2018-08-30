@@ -1,45 +1,29 @@
 FROM ubuntu:16.04
 
-ENV SRC_DIR /usr/local/src/monero
+RUN apt update && apt install -y \
+    build-essential cmake libboost-all-dev \
+    miniupnpc libunbound-dev graphviz doxygen \
+    libunwind8-dev pkg-config libssl-dev git \
+    libminiupnpc-dev liblzma-dev libldns-dev \
+    libexpat1-dev doxygen graphviz libgtest-dev
 
-RUN set -x \
-  && buildDeps=' \
-      ca-certificates \
-      cmake \
-      g++ \
-      git \
-      libboost1.58-all-dev \
-      libssl-dev \
-      make \
-      pkg-config \
-  ' \
-  && apt-get -qq update \
-  && apt-get -qq --no-install-recommends install $buildDeps
+ADD . /usr/src/geldum
 
-RUN git clone https://github.com/monero-project/monero.git $SRC_DIR
-WORKDIR $SRC_DIR
-RUN make -j$(nproc) release-static
+WORKDIR /usr/src/geldum
 
-RUN cp build/release/bin/* /usr/local/bin/ \
-  \
-  && rm -r $SRC_DIR \
-  && apt-get -qq --auto-remove purge $buildDeps
+RUN make -j 8 release-static && \
+    mkdir /geldum && \
+    cp -fv build/release/bin/* /geldum
 
-# Contains the blockchain
-VOLUME /root/.bitmonero
+WORKDIR /geldum
 
-# Generate your wallet via accessing the container and run:
-# cd /wallet
-# monero-wallet-cli
-VOLUME /wallet
+VOLUME [ "/geldum" ]
 
-ENV LOG_LEVEL 0
-ENV P2P_BIND_IP 0.0.0.0
-ENV P2P_BIND_PORT 18080
-ENV RPC_BIND_IP 127.0.0.1
-ENV RPC_BIND_PORT 18081
+RUN apt purge -y build-essential cmake libboost-all-dev \
+    miniupnpc libunbound-dev graphviz doxygen \
+    libunwind8-dev pkg-config libssl-dev git \
+    libminiupnpc-dev liblzma-dev libldns-dev \
+    libexpat1-dev doxygen graphviz libgtest-dev && \
+    apt clean
 
-EXPOSE 18080
-EXPOSE 18081
-
-CMD monerod --log-level=$LOG_LEVEL --p2p-bind-ip=$P2P_BIND_IP --p2p-bind-port=$P2P_BIND_PORT --rpc-bind-ip=$RPC_BIND_IP --rpc-bind-port=$RPC_BIND_PORT
+ENTRYPOINT [ "/geldum/geldumd" ]
