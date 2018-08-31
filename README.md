@@ -89,8 +89,9 @@ invokes cmake commands as needed.
     parallel build by running `make -j<number of threads>` instead of `make`. For
     this to be worthwhile, the machine should have one core and about 2GB of RAM
     available per thread.
+    
     *Important*: On OsX, make sure you are using Boost 1.67
-
+    
 * The resulting executables can be found in `build/release/bin`
 
 * Add `PATH="$PATH:$HOME/geldum/build/release/bin"` to `.profile`
